@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_white"
+    android:orientation="vertical"
+    tools:context="blx.rizmaulana.com.blx.app.view.PostBarangView">
+
+    <include layout="@layout/toolbar"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kategori"
+                android:textColor="@color/color_text_primary"/>
+
+            <Spinner
+                android:id="@+id/spinner_kab"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="12dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Kabupaten"
+                android:textColor="@color/color_text_primary"/>
+
+            <Spinner
+                android:id="@+id/spinner_kategori"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="12dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Judul Iklan"
+                android:textColor="@color/color_text_primary"/>
+
+            <EditText
+                android:id="@+id/txt_judul"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Harga"
+                android:textColor="@color/color_text_primary"/>
+
+            <EditText
+                android:id="@+id/txt_harga"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Rp."
+                android:inputType="number"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Deskripsi"
+                android:textColor="@color/color_text_primary"/>
+            <EditText
+                android:id="@+id/txt_deskripsi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lines="3"
+                android:textSize="15sp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Foto"
+                android:textColor="@color/color_text_primary"/>
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:id="@+id/m_img_1"
+                        android:layout_margin="8dp"
+                        android:background="@drawable/img_take_photo"
+                        android:layout_width="128dp"
+                        android:layout_height="128dp"/>
+                    <ImageView
+                        android:id="@+id/m_img_2"
+                        android:layout_margin="8dp"
+                        android:background="@drawable/img_take_photo"
+                        android:layout_width="128dp"
+                        android:layout_height="128dp"/>
+                    <ImageView
+                        android:id="@+id/m_img_3"
+                        android:layout_margin="8dp"
+                        android:background="@drawable/img_take_photo"
+                        android:layout_width="128dp"
+                        android:layout_height="128dp"/>
+                </LinearLayout>
+            </HorizontalScrollView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Pastikan data barang yang Anda ini benar."
+                android:textColor="@color/color_text_secondary"/>
+            <Button
+                android:id="@+id/m_btn_simpan"
+                android:textColor="@color/color_white"
+                android:text="SIMPAN"
+                android:layout_marginTop="32dp"
+                android:layout_marginBottom="32dp"
+                android:background="@color/colorAccent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

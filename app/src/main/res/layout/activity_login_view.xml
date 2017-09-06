@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img_background"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:scaleType="centerCrop"
+    tools:context="blx.rizmaulana.com.blx.app.view.LoginView">
+
+    <ImageView
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:src="@mipmap/ic_launcher"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Silakan login dengan Akun Anda."
+        android:textColor="@color/color_white"/>
+
+
+    <EditText
+        android:textSize="15sp"
+        android:layout_marginTop="16dp"
+        android:id="@+id/txt_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_white"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:padding="16dp"/>
+
+
+    <EditText
+        android:id="@+id/txt_password"
+        android:textSize="15sp"
+        android:fontFamily="sans-serif"
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_white"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:padding="16dp"
+        />
+
+
+    <Button
+        android:padding="16dp"
+        android:id="@+id/btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@color/colorAccent"
+        android:text="LOGIN"
+        android:textColor="@color/color_white"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Belum mempunyai akun?"
+        android:textColor="@color/color_white"/>
+
+    <Button
+        android:padding="16dp"
+        android:id="@+id/btn_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@color/material_green"
+        android:text="REGISTER"
+        android:textColor="@color/color_white"
+        android:textStyle="bold"/>
+
+
+</LinearLayout>

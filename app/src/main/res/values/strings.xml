@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">BLX</string>
+    <string name="title_activity_home_view">HomeView</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+</resources>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="Menu Utama">
+        <menu>
+            <item android:title="Kategori"
+                  android:icon="@drawable/ic_kategori"
+                  android:id="@+id/action_kategori"/>
+            <item android:title="Iklan Saya"
+                  android:icon="@drawable/ic_iklan_saya"
+                  android:id="@+id/action_iklan_saya"/>
+        </menu>
+    </item>
+
+    <item android:title="Lain-lain">
+        <menu>
+            <item android:title="Tentang Aplikasi"
+                  android:icon="@drawable/ic_info"
+                  android:id="@+id/action_tentang"/>
+            <item android:title="Berikan Rating"
+                  android:icon="@drawable/ic_rating"
+                  android:id="@+id/action_rating"/>
+            <item android:title="Keluar"
+                  android:id="@+id/action_keluar"/>
+        </menu>
+    </item>
+</menu>

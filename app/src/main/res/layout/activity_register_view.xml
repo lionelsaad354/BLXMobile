@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img_background"
+    tools:context="blx.rizmaulana.com.blx.app.view.RegisterView">
+
+    <include layout="@layout/toolbar"/>
+
+    <LinearLayout
+        android:padding="24dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textColor="@color/color_white"
+            android:text="Akun"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:id="@+id/txt_email"
+            android:inputType="textEmailAddress"
+            android:layout_marginTop="8dp"
+            android:hint="Email"
+            android:textSize="15sp"
+            android:padding="16dp"
+            android:background="@color/color_white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:id="@+id/txt_password"
+            android:fontFamily="sans-serif"
+            android:inputType="textPassword"
+            android:layout_marginTop="8dp"
+            android:hint="Password"
+            android:textSize="15sp"
+            android:padding="16dp"
+            android:background="@color/color_white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_marginTop="16dp"
+            android:textColor="@color/color_white"
+            android:text="Data Pengguna"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:id="@+id/txt_nama"
+            android:layout_marginTop="8dp"
+            android:hint="Nama Lengkap"
+            android:textSize="15sp"
+            android:padding="16dp"
+            android:background="@color/color_white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:inputType="number"
+            android:id="@+id/txt_telepon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@color/color_white"
+            android:hint="Nomor Telepon"
+            android:padding="16dp"
+            android:textSize="15sp"/>
+
+
+        <TextView
+            android:textColor="@color/color_white"
+            android:layout_marginTop="16dp"
+            android:text="Dengan mendaftar pada BLX Anda mematuhi seluruh kebijakan yang ditetapkan oleh BLX kepada pelanggan."
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:id="@+id/btn_register"
+            android:padding="16dp"
+            android:textStyle="bold"
+            android:textColor="@color/color_white"
+            android:text="REGISTER"
+            android:layout_marginTop="16dp"
+            android:background="@color/colorAccent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
